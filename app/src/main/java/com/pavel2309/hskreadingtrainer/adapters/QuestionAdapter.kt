@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.pavel2309.hskreadingtrainer.R
 import com.pavel2309.hskreadingtrainer.data.model.QuestionWithAnswers
 
-class QuestionAdapter internal constructor(context: Context):
+class QuestionAdapter internal constructor(context: Context) :
     RecyclerView.Adapter<QuestionAdapter.ViewHolder>() {
 
     private val inflater: LayoutInflater = LayoutInflater.from(context)
@@ -32,7 +32,7 @@ class QuestionAdapter internal constructor(context: Context):
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): QuestionAdapter.ViewHolder {
 
-        val itemView = inflater.inflate(R.layout.question_item, parent,false)
+        val itemView = inflater.inflate(R.layout.question_item, parent, false)
 
         return ViewHolder(itemView)
 
@@ -56,31 +56,59 @@ class QuestionAdapter internal constructor(context: Context):
         holder.choiceD.visibility = View.GONE
 
 
-        holder.firstOption.setTextColor(ContextCompat.getColor(holder.itemView.context, R.color.mainColor))
-        holder.secondOption.setTextColor(ContextCompat.getColor(holder.itemView.context, R.color.mainColor))
-        holder.thirdOption.setTextColor(ContextCompat.getColor(holder.itemView.context, R.color.mainColor))
-        holder.fourthOption.setTextColor(ContextCompat.getColor(holder.itemView.context, R.color.mainColor))
+        holder.firstOption.setTextColor(
+            ContextCompat.getColor(
+                holder.itemView.context,
+                R.color.mainColor
+            )
+        )
+        holder.secondOption.setTextColor(
+            ContextCompat.getColor(
+                holder.itemView.context,
+                R.color.mainColor
+            )
+        )
+        holder.thirdOption.setTextColor(
+            ContextCompat.getColor(
+                holder.itemView.context,
+                R.color.mainColor
+            )
+        )
+        holder.fourthOption.setTextColor(
+            ContextCompat.getColor(
+                holder.itemView.context,
+                R.color.mainColor
+            )
+        )
 
         holder.question.text = currentQuestion.question.text
         //holder.question.text = currentQuestion.answers.size.toString()
 
-        for(i in 1..currentQuestion.answers.size) {
-            when (i){
-                1 -> {holder.firstOption.text = currentQuestion.answers[0].text
+        for (i in 1..currentQuestion.answers.size) {
+            when (i) {
+                1 -> {
+                    holder.firstOption.text = currentQuestion.answers[0].text
                     holder.firstOption.visibility = View.VISIBLE
-                    holder.choiceA.visibility = View.VISIBLE}
+                    holder.choiceA.visibility = View.VISIBLE
+                }
 
-                2 -> {holder.secondOption.text = currentQuestion.answers[1].text
+                2 -> {
+                    holder.secondOption.text = currentQuestion.answers[1].text
                     holder.secondOption.visibility = View.VISIBLE
-                    holder.choiceB.visibility = View.VISIBLE}
+                    holder.choiceB.visibility = View.VISIBLE
+                }
 
-                3 -> {holder.thirdOption.text = currentQuestion.answers[2].text
+                3 -> {
+                    holder.thirdOption.text = currentQuestion.answers[2].text
                     holder.thirdOption.visibility = View.VISIBLE
-                    holder.choiceC.visibility = View.VISIBLE}
+                    holder.choiceC.visibility = View.VISIBLE
+                }
 
-                4 -> {holder.fourthOption.text = currentQuestion.answers[3].text
+                4 -> {
+                    holder.fourthOption.text = currentQuestion.answers[3].text
                     holder.fourthOption.visibility = View.VISIBLE
-                    holder.choiceD.visibility = View.VISIBLE}
+                    holder.choiceD.visibility = View.VISIBLE
+                }
             }
         }
 
@@ -91,34 +119,74 @@ class QuestionAdapter internal constructor(context: Context):
 //        holder.fourthOption.text = currentQuestion.answers[3].text
 
         holder.firstOption.setOnClickListener {
-            if(currentQuestion.answers[0].isCorrect) {
-                holder.firstOption.setTextColor(ContextCompat.getColor(holder.itemView.context, R.color.correctAnswer))
+            if (currentQuestion.answers[0].isCorrect) {
+                holder.firstOption.setTextColor(
+                    ContextCompat.getColor(
+                        holder.itemView.context,
+                        R.color.correctAnswer
+                    )
+                )
             } else {
-                holder.firstOption.setTextColor(ContextCompat.getColor(holder.itemView.context, R.color.wrongAnswer))
+                holder.firstOption.setTextColor(
+                    ContextCompat.getColor(
+                        holder.itemView.context,
+                        R.color.wrongAnswer
+                    )
+                )
             }
         }
 
         holder.secondOption.setOnClickListener {
-            if(currentQuestion.answers[1].isCorrect) {
-                holder.secondOption.setTextColor(ContextCompat.getColor(holder.itemView.context, R.color.correctAnswer))
+            if (currentQuestion.answers[1].isCorrect) {
+                holder.secondOption.setTextColor(
+                    ContextCompat.getColor(
+                        holder.itemView.context,
+                        R.color.correctAnswer
+                    )
+                )
             } else {
-                holder.secondOption.setTextColor(ContextCompat.getColor(holder.itemView.context, R.color.wrongAnswer))
+                holder.secondOption.setTextColor(
+                    ContextCompat.getColor(
+                        holder.itemView.context,
+                        R.color.wrongAnswer
+                    )
+                )
             }
         }
 
         holder.thirdOption.setOnClickListener {
-            if(currentQuestion.answers[2].isCorrect) {
-                holder.thirdOption.setTextColor(ContextCompat.getColor(holder.itemView.context, R.color.correctAnswer))
+            if (currentQuestion.answers[2].isCorrect) {
+                holder.thirdOption.setTextColor(
+                    ContextCompat.getColor(
+                        holder.itemView.context,
+                        R.color.correctAnswer
+                    )
+                )
             } else {
-                holder.thirdOption.setTextColor(ContextCompat.getColor(holder.itemView.context, R.color.wrongAnswer))
+                holder.thirdOption.setTextColor(
+                    ContextCompat.getColor(
+                        holder.itemView.context,
+                        R.color.wrongAnswer
+                    )
+                )
             }
         }
 
         holder.fourthOption.setOnClickListener {
-            if(currentQuestion.answers[3].isCorrect) {
-                holder.fourthOption.setTextColor(ContextCompat.getColor(holder.itemView.context, R.color.correctAnswer))
+            if (currentQuestion.answers[3].isCorrect) {
+                holder.fourthOption.setTextColor(
+                    ContextCompat.getColor(
+                        holder.itemView.context,
+                        R.color.correctAnswer
+                    )
+                )
             } else {
-                holder.fourthOption.setTextColor(ContextCompat.getColor(holder.itemView.context, R.color.wrongAnswer))
+                holder.fourthOption.setTextColor(
+                    ContextCompat.getColor(
+                        holder.itemView.context,
+                        R.color.wrongAnswer
+                    )
+                )
             }
         }
 
@@ -131,7 +199,6 @@ class QuestionAdapter internal constructor(context: Context):
         this.questions = questions
         notifyDataSetChanged()
     }
-
 
 
 }
