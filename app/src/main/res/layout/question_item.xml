@@ -1,6 +1,163 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <data>
+        <variable
+            name="question"
+            type="com.pavel2309.hskreadingtrainer.data.model.Question"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <View
+            android:id="@+id/background"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/background_frame"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/question_string"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/question"
+            android:textAlignment="viewStart"
+            android:textColor="@color/mainColor"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/background"
+            app:layout_constraintStart_toStartOf="@+id/background"
+            app:layout_constraintTop_toTopOf="@+id/background"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <!-- This adds a border between the TextViews -->
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/option_one"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/option_one"
+            android:textColor="@color/mainColor"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/background"
+            app:layout_constraintStart_toEndOf="@+id/textViewA"
+            app:layout_constraintTop_toBottomOf="@+id/question_string"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/option_a"
+            android:textColor="@color/mainColor"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintBaseline_toBaselineOf="@+id/option_one"
+            app:layout_constraintStart_toStartOf="@+id/background" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/option_two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/option_two"
+            android:textColor="@color/mainColor"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintBottom_toBottomOf="@+id/background"
+            app:layout_constraintEnd_toEndOf="@+id/background"
+            app:layout_constraintStart_toEndOf="@+id/textViewB"
+            app:layout_constraintTop_toBottomOf="@+id/option_one"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/option_three"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/option_three"
+            android:textColor="@color/mainColor"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintBottom_toBottomOf="@+id/background"
+            app:layout_constraintEnd_toEndOf="@+id/background"
+            app:layout_constraintStart_toEndOf="@+id/textViewC"
+            app:layout_constraintTop_toBottomOf="@+id/option_two"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/option_four"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/option_four"
+            android:textColor="@color/mainColor"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintBottom_toBottomOf="@+id/background"
+            app:layout_constraintEnd_toEndOf="@+id/background"
+            app:layout_constraintStart_toEndOf="@+id/textViewD"
+            app:layout_constraintTop_toBottomOf="@+id/option_three" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/option_b"
+            android:textColor="@color/mainColor"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintBaseline_toBaselineOf="@+id/option_two"
+            app:layout_constraintStart_toStartOf="@+id/background" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/option_c"
+            android:textColor="@color/mainColor"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintBaseline_toBaselineOf="@+id/option_three"
+            app:layout_constraintStart_toStartOf="@+id/background" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/option_d"
+            android:textColor="@color/mainColor"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintBaseline_toBaselineOf="@+id/option_four"
+            app:layout_constraintStart_toStartOf="@+id/background" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
