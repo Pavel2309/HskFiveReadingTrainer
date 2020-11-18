@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_contacts"
+            android:title="@string/contacts" />
+        <item
+            android:id="@+id/nav_about"
+            android:title="@string/about" />
+        <!--        <item-->
+        <!--            android:id="@+id/nav_hsk3"-->
+        <!--            android:icon="@drawable/ic_baseline_class_24"-->
+        <!--            android:title="@string/hsk_3" />-->
+        <!--        <item-->
+        <!--            android:id="@+id/nav_hsk4"-->
+        <!--            android:icon="@drawable/ic_baseline_class_24"-->
+        <!--            android:title="@string/hsk_4" />-->
+        <!--        <item-->
+        <!--            android:id="@+id/nav_hsk5"-->
+        <!--            android:icon="@drawable/ic_baseline_class_24"-->
+        <!--            android:title="@string/hsk_5" />-->
+        <!--        <item-->
+        <!--            android:id="@+id/nav_hsk6"-->
+        <!--            android:icon="@drawable/ic_baseline_class_24"-->
+        <!--            android:title="@string/hsk_6" />-->
+    </group>
+
+</menu>
