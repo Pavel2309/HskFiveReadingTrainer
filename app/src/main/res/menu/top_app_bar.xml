@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--    <item-->
+    <!--        android:id="@+id/favorite"-->
+    <!--        android:title="favorite"-->
+    <!--        app:showAsAction="ifRoom" />-->
+
+    <!--    <item-->
+    <!--        android:id="@+id/search"-->
+    <!--        android:title="search"-->
+    <!--        app:showAsAction="ifRoom" />-->
+
+    <!--    <item-->
+    <!--        android:id="@+id/more"-->
+    <!--        android:title="more"-->
+    <!--        app:showAsAction="ifRoom" />-->
+
+
+    <item android:title="@string/inflate"
+        android:id="@+id/topAppBarInflate"
+        />
+
+
+    <item android:title="@string/add_question"
+        android:id="@+id/topAppBarAddQuestion"
+        />
+
+
+    <item android:title="@string/clear_all"
+        android:id="@+id/topAppBarClearAll"
+        />
+
+    <item android:title="@string/reset_progress"
+        android:id="@+id/topAppBarResetProgress"
+        />
+
+</menu>

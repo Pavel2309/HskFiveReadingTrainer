@@ -32,4 +32,15 @@
     <string name="is_correct">Is Correct?</string>
     <string name="add_answer">Add Answer</string>
     <string name="select_level">Select Level</string>
+    <string name="inflate">Inflate</string>
+    <string name="clear_all">Clear All</string>
+    <string name="reset_progress">Reset Progress</string>
+    <string name="title_fragment">Title Fragment</string>
+    <string name="start">Start</string>
+    <string name="questions">Questions</string>
+    <string name="total">Total</string>
+    <string name="change">Change</string>
+    <string name="save">Save</string>
+    <string name="category">Category</string>
+    <string name="next_question">Next Rnadom Question</string>
 </resources>
