@@ -1,4 +1,4 @@
-package com.pavel2309.hskreadingtrainer.utils
+package com.pavel2309.hskreadingtrainer.util
 
 import android.app.Application
 import com.squareup.moshi.Json

@@ -1,4 +1,7 @@
 package com.pavel2309.hskreadingtrainer.ui
 
-class TitleViewModel {
+import androidx.lifecycle.ViewModel
+
+class TitleViewModel: ViewModel() {
+
 }
