@@ -19,18 +19,6 @@ class HskFiveFragment : Fragment() {
 
     private var isFinished = 0
 
-    //private lateinit var hasQuestions
-
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//
-//        val forward = MaterialSharedAxis(MaterialSharedAxis.Z, true)
-//        enterTransition = forward
-//
-//        val backward = MaterialSharedAxis(MaterialSharedAxis.Z, false)
-//        returnTransition = backward
-//    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -111,8 +99,6 @@ class HskFiveFragment : Fragment() {
 
 
         }
-
-
 
 //        hskFiveViewModel.categoryWithQuestionsAndAnswers.observe(viewLifecycleOwner) {
 //

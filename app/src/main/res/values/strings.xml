@@ -43,4 +43,5 @@
     <string name="save">Save</string>
     <string name="category">Category</string>
     <string name="next_question">Next Rnadom Question</string>
+    <string name="hello">Hello</string>
 </resources>
