@@ -60,29 +60,29 @@ class TitleFragment : Fragment() {
         }
 
 
-//        binding.hskOneConstraint.setOnClickListener {
-//            findNavController().navigate(R.id.action_titleFragment_to_hskOneFragment)
-//            //Toast.makeText(activity, "HSK 1 will come soon", Toast.LENGTH_SHORT).show()
-//        }
-//        binding.hskTwoConstraint.setOnClickListener {
-//            findNavController().navigate(R.id.action_titleFragment_to_hskTwoFragment)
-//            //Toast.makeText(activity, "HSK 2 will come soon", Toast.LENGTH_SHORT).show()
-//        }
-//        binding.hskThreeConstraint.setOnClickListener {
-//            findNavController().navigate(R.id.action_titleFragment_to_hskThreeFragment)
-//            //Toast.makeText(activity, "HSK 3 will come soon", Toast.LENGTH_SHORT).show()
-//        }
-//        binding.hskFourConstraint.setOnClickListener {
-//            findNavController().navigate(R.id.action_titleFragment_to_hskFourFragment)
-//            //Toast.makeText(activity, "HSK 4 will come soon", Toast.LENGTH_SHORT).show()
-//        }
-//        binding.hskFiveConstraint.setOnClickListener {
-//            findNavController().navigate(R.id.action_titleFragment_to_hskFiveFragment)
-//        }
-//        binding.hskSixConstraint.setOnClickListener {
-//            findNavController().navigate(R.id.action_titleFragment_to_hskSixFragment)
-//            //Toast.makeText(activity, "HSK 6 will come soon", Toast.LENGTH_SHORT).show()
-//        }
+        binding.hskOneConstraint.setOnClickListener {
+            //findNavController().navigate(R.id.action_titleFragment_to_hskOneFragment)
+            //Toast.makeText(activity, "HSK 1 will come soon", Toast.LENGTH_SHORT).show()
+        }
+        binding.hskTwoConstraint.setOnClickListener {
+            //findNavController().navigate(R.id.action_titleFragment_to_hskTwoFragment)
+            //Toast.makeText(activity, "HSK 2 will come soon", Toast.LENGTH_SHORT).show()
+        }
+        binding.hskThreeConstraint.setOnClickListener {
+            //findNavController().navigate(R.id.action_titleFragment_to_hskThreeFragment)
+            //Toast.makeText(activity, "HSK 3 will come soon", Toast.LENGTH_SHORT).show()
+        }
+        binding.hskFourConstraint.setOnClickListener {
+            //findNavController().navigate(R.id.action_titleFragment_to_hskFourFragment)
+            //Toast.makeText(activity, "HSK 4 will come soon", Toast.LENGTH_SHORT).show()
+        }
+        binding.hskFiveConstraint.setOnClickListener {
+            findNavController().navigate(R.id.action_titleFragment_to_hskFiveFragment)
+        }
+        binding.hskSixConstraint.setOnClickListener {
+            //findNavController().navigate(R.id.action_titleFragment_to_hskSixFragment)
+            //Toast.makeText(activity, "HSK 6 will come soon", Toast.LENGTH_SHORT).show()
+        }
 
 
         return binding.root

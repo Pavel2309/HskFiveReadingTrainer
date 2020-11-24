@@ -17,7 +17,7 @@ class HskFiveFragment : Fragment() {
     private lateinit var binding: FragmentHskFiveBinding
     private lateinit var hskFiveViewModel: HskFiveViewModel
 
-    private var a = 0
+    private var isFinished = 0
 
     //private lateinit var hasQuestions
 
@@ -43,10 +43,10 @@ class HskFiveFragment : Fragment() {
 
 
         binding.startButton.setOnClickListener { view: View ->
-            if(a != 0) {
+            if(isFinished != 0) {
                 view.findNavController().navigate(R.id.action_hskFiveFragment_to_hskFiveQuizFragment)
             } else {
-                Toast.makeText(activity, "You have finished all the questions", Toast.LENGTH_SHORT).show()
+                Toast.makeText(activity, "You have finished all questions", Toast.LENGTH_SHORT).show()
             }
 
         }
@@ -94,9 +94,9 @@ class HskFiveFragment : Fragment() {
 
         hskFiveViewModel.allUnsolevedCategoriesWithQuestionsAndAnswersByLevel.observe(viewLifecycleOwner) {
 
-            a = it.size
+            isFinished = it.size
 
-            binding.testTextView.text = a.toString()
+            binding.testTextView.text = isFinished.toString()
 
         }
 
