@@ -31,12 +31,13 @@ class HskFiveFragment : Fragment() {
 
 
         binding.startButton.setOnClickListener { view: View ->
-            if(isFinished != 0) {
-                view.findNavController().navigate(R.id.action_hskFiveFragment_to_hskFiveQuizFragment)
+            if (isFinished != 0) {
+                view.findNavController()
+                    .navigate(R.id.action_hskFiveFragment_to_hskFiveQuizFragment)
             } else {
-                Toast.makeText(activity, "You have finished all questions", Toast.LENGTH_SHORT).show()
+                Toast.makeText(activity, "You have finished all questions", Toast.LENGTH_SHORT)
+                    .show()
             }
-
         }
 
 
@@ -80,33 +81,13 @@ class HskFiveFragment : Fragment() {
 
 
 
-        hskFiveViewModel.allUnsolevedCategoriesWithQuestionsAndAnswersByLevel.observe(viewLifecycleOwner) {
-
-            isFinished = it.size
-
-            binding.testTextView.text = isFinished.toString()
-
-        }
-
-        hskFiveViewModel.allCategoriesIdHskFive.observe(viewLifecycleOwner) {
-
+        hskFiveViewModel.allUnsolevedCategoriesWithQuestionsAndAnswersByLevel.observe(
+            viewLifecycleOwner
+        ) {
             binding.titleTextView.text = it.size.toString()
-
             binding.titleTextView.visibility = View.VISIBLE
-
-
-
-
-
+            isFinished = it.size
         }
-
-//        hskFiveViewModel.categoryWithQuestionsAndAnswers.observe(viewLifecycleOwner) {
-//
-//            binding.titleTextView.text = it[0].category.text
-//
-//            binding.titleTextView.visibility = View.VISIBLE
-//
-//        }
 
 
         return binding.root
@@ -117,7 +98,7 @@ class HskFiveFragment : Fragment() {
 
         hskFiveViewModel.allCategoriesWithQuestionsAndAnswersByLevel.observe(viewLifecycleOwner, {
 
-            for(i in it) {
+            for (i in it) {
                 i.category.isSolved = false
                 binding.hskFiveViewModel?.updateCategory(i.category)
             }

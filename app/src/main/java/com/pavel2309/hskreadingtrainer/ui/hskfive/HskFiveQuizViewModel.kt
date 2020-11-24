@@ -16,17 +16,12 @@ class HskFiveQuizViewModel(application: Application) : AndroidViewModel(applicat
 
     private val repository: QuizRepository
 
-//    val getAllCategoryWithQuestionsAndAnswersHskFive: LiveData<List<CategoryWithQuestionsAndAnswers>>
-
     val getAllUnsolvedCategoryWithQuestionsAndAnswersHskFive: LiveData<List<CategoryWithQuestionsAndAnswers>>
 
 
     init {
         val quizDao = QuizDatabase.getDatabase(application).quizDao()
         repository = QuizRepository(quizDao)
-
-//        getAllCategoryWithQuestionsAndAnswersHskFive =
-//            repository.getAllCategoriesWithQuestionsAndAnswersByLevel(5)
 
         getAllUnsolvedCategoryWithQuestionsAndAnswersHskFive =
             repository.getAllUnsolvedCategoryWithQuestionsAndAnswersByLevel(5)

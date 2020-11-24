@@ -51,7 +51,10 @@ class AddQuestionFragment : Fragment() {
 
     private fun addCategory() {
         if (binding.enterCategoryText.text.isNotEmpty() && binding.levelTextView.text.isNotEmpty()) {
-            addQuestionViewModel.addCategory(binding.levelTextView.text.toString().toLong(), binding.enterCategoryText.text.toString())
+            addQuestionViewModel.addCategory(
+                binding.levelTextView.text.toString().toLong(),
+                binding.enterCategoryText.text.toString()
+            )
         }
     }
 

@@ -27,7 +27,7 @@ class AddQuestionViewModel(application: Application) : AndroidViewModel(applicat
         getAllCategories = repository.getAllCategories
     }
 
-    fun addCategory(level: Long ,categoryText: String) {
+    fun addCategory(level: Long, categoryText: String) {
         viewModelScope.launch(Dispatchers.IO) {
             myCategoryId = repository.insertCategory(Category(level, categoryText, false))
         }

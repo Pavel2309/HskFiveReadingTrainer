@@ -18,12 +18,10 @@ class HskFiveViewModel(application: Application) : AndroidViewModel(application)
     private val repository: QuizRepository
     val allCategoriesIdHskFive: LiveData<List<CategorySmall>>
 
-    private var currentTime = MutableLiveData<List<CategorySmall>>()
 
     val allCategoriesWithQuestionsAndAnswersByLevel: LiveData<List<CategoryWithQuestionsAndAnswers>>
 
     val allUnsolevedCategoriesWithQuestionsAndAnswersByLevel: LiveData<List<CategoryWithQuestionsAndAnswers>>
-
 
 
     init {
@@ -31,15 +29,13 @@ class HskFiveViewModel(application: Application) : AndroidViewModel(application)
         repository = QuizRepository(quizDao)
         allCategoriesIdHskFive = repository.getAllCategoriesIdByLevel(5)
 
-        allCategoriesWithQuestionsAndAnswersByLevel = repository.getAllCategoriesWithQuestionsAndAnswersByLevel(5)
+        allCategoriesWithQuestionsAndAnswersByLevel =
+            repository.getAllCategoriesWithQuestionsAndAnswersByLevel(5)
 
-        allUnsolevedCategoriesWithQuestionsAndAnswersByLevel = repository.getAllUnsolvedCategoryWithQuestionsAndAnswersByLevel(5)
+        allUnsolevedCategoriesWithQuestionsAndAnswersByLevel =
+            repository.getAllUnsolvedCategoryWithQuestionsAndAnswersByLevel(5)
     }
 
-
-    fun something(): Long? {
-        return currentTime.value?.get(Random.nextInt(0, currentTime.value!!.size))?.categoryId
-    }
 
     fun deleteAll() {
         viewModelScope.launch(Dispatchers.IO) {
@@ -65,7 +61,13 @@ class HskFiveViewModel(application: Application) : AndroidViewModel(application)
             viewModelScope.launch(Dispatchers.IO) {
                 for (category in categories.categories) {
 
-                    categoryId = repository.insertCategory(Category(category.level ,category.categoryText, false))
+                    categoryId = repository.insertCategory(
+                        Category(
+                            category.level,
+                            category.categoryText,
+                            false
+                        )
+                    )
 
 
                     for (question in category.questions) {
