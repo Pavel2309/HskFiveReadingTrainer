@@ -1,8 +1,8 @@
-# Hsk Reading Trainer
+# HSK Reading Trainer
 
-Android application in which you can train the reading part of the HSK exam (HSK 5). 
+### Android application which helps you master the reading part of the HSK exam (汉语水平考试)(HSK 5). 
 
-The app implements MVVM architecture using Room, Data Binding, Coroutines, ViewModel, LiveData, Repository
+### The app implements MVVM architecture using Room, Data Binding, Coroutines, ViewModel, LiveData, Repository
 
 ## Screenshots
 
