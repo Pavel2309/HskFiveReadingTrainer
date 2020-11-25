@@ -1,4 +1,4 @@
-# HSK Reading Trainer
+# HSK 5 Reading Trainer
 
 ### Android application which helps you master the reading part of the HSK exam (汉语水平考试)(HSK 5). 
 
