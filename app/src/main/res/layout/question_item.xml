@@ -30,13 +30,12 @@
             android:id="@+id/question_string"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:text="@string/question"
             android:textAlignment="viewStart"
-            android:textColor="@color/mainColor"
+            android:textColor="@color/textColor"
             android:textSize="@dimen/text_size"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/background"
@@ -44,7 +43,6 @@
             app:layout_constraintTop_toTopOf="@+id/background"
             app:layout_constraintVertical_bias="0.0" />
 
-        <!-- This adds a border between the TextViews -->
 
 
         <com.google.android.material.textview.MaterialTextView
@@ -56,7 +54,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:text="@string/option_one"
-            android:textColor="@color/mainColor"
+            android:textColor="@color/textColor"
             android:textSize="@dimen/text_size"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/background"
@@ -70,7 +68,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="@string/option_a"
-            android:textColor="@color/mainColor"
+            android:textColor="@color/textColor"
             android:textSize="@dimen/text_size"
             app:layout_constraintBaseline_toBaselineOf="@+id/option_one"
             app:layout_constraintStart_toStartOf="@+id/background" />
@@ -84,7 +82,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:text="@string/option_two"
-            android:textColor="@color/mainColor"
+            android:textColor="@color/textColor"
             android:textSize="@dimen/text_size"
             app:layout_constraintBottom_toBottomOf="@+id/background"
             app:layout_constraintEnd_toEndOf="@+id/background"
@@ -101,7 +99,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:text="@string/option_three"
-            android:textColor="@color/mainColor"
+            android:textColor="@color/textColor"
             android:textSize="@dimen/text_size"
             app:layout_constraintBottom_toBottomOf="@+id/background"
             app:layout_constraintEnd_toEndOf="@+id/background"
@@ -118,7 +116,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:text="@string/option_four"
-            android:textColor="@color/mainColor"
+            android:textColor="@color/textColor"
             android:textSize="@dimen/text_size"
             app:layout_constraintBottom_toBottomOf="@+id/background"
             app:layout_constraintEnd_toEndOf="@+id/background"
@@ -131,7 +129,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="@string/option_b"
-            android:textColor="@color/mainColor"
+            android:textColor="@color/textColor"
             android:textSize="@dimen/text_size"
             app:layout_constraintBaseline_toBaselineOf="@+id/option_two"
             app:layout_constraintStart_toStartOf="@+id/background" />
@@ -142,7 +140,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="@string/option_c"
-            android:textColor="@color/mainColor"
+            android:textColor="@color/textColor"
             android:textSize="@dimen/text_size"
             app:layout_constraintBaseline_toBaselineOf="@+id/option_three"
             app:layout_constraintStart_toStartOf="@+id/background" />
@@ -153,7 +151,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="@string/option_d"
-            android:textColor="@color/mainColor"
+            android:textColor="@color/textColor"
             android:textSize="@dimen/text_size"
             app:layout_constraintBaseline_toBaselineOf="@+id/option_four"
             app:layout_constraintStart_toStartOf="@+id/background" />

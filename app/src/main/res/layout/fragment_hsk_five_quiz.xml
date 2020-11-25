@@ -61,15 +61,13 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
                     android:background="@drawable/background_frame"
-
-
                     android:fontFamily="@font/noto_serif"
                     android:paddingStart="@dimen/padding"
                     android:paddingTop="@dimen/padding"
                     android:paddingEnd="@dimen/padding"
                     android:paddingBottom="@dimen/padding"
                     android:text="@string/category"
-                    android:textColor="@color/mainColor"
+                    android:textColor="@color/textColor"
                     android:textSize="@dimen/text_size"
                     android:visibility="invisible"
                     app:layout_constraintEnd_toEndOf="parent"

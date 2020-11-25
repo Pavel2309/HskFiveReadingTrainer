@@ -10,7 +10,7 @@
 
     <style name="TextStyle" parent="@android:style/TextAppearance">
         <item name="android:textSize">20sp</item>
-        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/textColor</item>
     </style>
 
 </resources>

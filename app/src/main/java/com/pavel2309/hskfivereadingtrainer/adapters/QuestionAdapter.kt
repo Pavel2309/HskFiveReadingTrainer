@@ -57,10 +57,10 @@ class QuestionAdapter internal constructor(context: Context):
         holder.choiceD.visibility = View.GONE
 
 
-        holder.firstOption.setTextColor(ContextCompat.getColor(holder.itemView.context, R.color.mainColor))
-        holder.secondOption.setTextColor(ContextCompat.getColor(holder.itemView.context, R.color.mainColor))
-        holder.thirdOption.setTextColor(ContextCompat.getColor(holder.itemView.context, R.color.mainColor))
-        holder.fourthOption.setTextColor(ContextCompat.getColor(holder.itemView.context, R.color.mainColor))
+        holder.firstOption.setTextColor(ContextCompat.getColor(holder.itemView.context, R.color.textColor))
+        holder.secondOption.setTextColor(ContextCompat.getColor(holder.itemView.context, R.color.textColor))
+        holder.thirdOption.setTextColor(ContextCompat.getColor(holder.itemView.context, R.color.textColor))
+        holder.fourthOption.setTextColor(ContextCompat.getColor(holder.itemView.context, R.color.textColor))
 
         holder.question.text = currentQuestion.question.text
         //holder.question.text = currentQuestion.answers.size.toString()
