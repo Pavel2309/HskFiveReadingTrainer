@@ -6,7 +6,7 @@
     <data>
         <variable
             name="question"
-            type="com.pavel2309.hskreadingtrainer.data.model.Question"/>
+            type="com.pavel2309.hskfivereadingtrainer.data.model.Question"/>
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

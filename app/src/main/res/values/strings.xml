@@ -1,16 +1,5 @@
 <resources>
-    <string name="app_name">HskReadingTrainer</string>
-    <string name="hsk_1">HSK 1</string>
-    <string name="new_words_150">New Words: 150</string>
-    <string name="hsk_2">HSK 2</string>
-    <string name="hsk_3">HSK 3</string>
-    <string name="new_words_300">New Words: 300</string>
-    <string name="hsk_4">HSK 4</string>
-    <string name="new_words_600">New Words: 600</string>
-    <string name="hsk_5">HSK 5</string>
-    <string name="new_words_1300">New Words: 1300</string>
-    <string name="hsk_6">HSK 6</string>
-    <string name="new_words_2500">New Words: 2500</string>
+    <string name="app_name">HskFiveReadingTrainer</string>
     <string name="contacts">Contacts</string>
     <string name="about">About</string>
     <string name="question">Question</string>
@@ -42,7 +31,7 @@
     <string name="change">Change</string>
     <string name="save">Save</string>
     <string name="category">Category</string>
-    <string name="next_question">Next Random Question</string>
+    <string name="next_question">Next Question</string>
     <string name="hello">Hello</string>
     <string name="questions_left">Questions Left</string>
     <string name="there_are">There are</string>

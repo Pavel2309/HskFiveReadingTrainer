@@ -8,7 +8,7 @@
 
         <variable
             name="hskFiveQuizViewModel"
-            type="com.pavel2309.hskreadingtrainer.ui.hskfive.HskFiveQuizViewModel" />
+            type="com.pavel2309.hskfivereadingtrainer.ui.hskfive.HskFiveQuizViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

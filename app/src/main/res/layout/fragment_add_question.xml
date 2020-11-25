@@ -6,7 +6,7 @@
     <data>
         <variable
             name="addQuestionViewModel"
-            type="com.pavel2309.hskreadingtrainer.ui.AddQuestionViewModel" />
+            type="com.pavel2309.hskfivereadingtrainer.ui.AddQuestionViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

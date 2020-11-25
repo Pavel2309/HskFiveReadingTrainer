@@ -2,30 +2,18 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/navigation"
-    app:startDestination="@id/titleFragment">
-
-    <fragment
-        android:id="@+id/titleFragment"
-        android:name="com.pavel2309.hskreadingtrainer.ui.TitleFragment"
-        android:label="TitleFragment" >
-        <action
-            android:id="@+id/action_titleFragment_to_hskFiveFragment"
-            app:destination="@id/hskFiveFragment" />
-    </fragment>
+    app:startDestination="@id/hskFiveFragment">
     <fragment
         android:id="@+id/hskFiveFragment"
-        android:name="com.pavel2309.hskreadingtrainer.ui.hskfive.HskFiveFragment"
+        android:name="com.pavel2309.hskfivereadingtrainer.ui.hskfive.HskFiveFragment"
         android:label="HskFiveFragment" >
-        <action
-            android:id="@+id/action_hskFiveFragment_to_titleFragment"
-            app:destination="@id/titleFragment" />
         <action
             android:id="@+id/action_hskFiveFragment_to_hskFiveQuizFragment"
             app:destination="@id/hskFiveQuizFragment" />
     </fragment>
     <fragment
         android:id="@+id/hskFiveQuizFragment"
-        android:name="com.pavel2309.hskreadingtrainer.ui.hskfive.HskFiveQuizFragment"
+        android:name="com.pavel2309.hskfivereadingtrainer.ui.hskfive.HskFiveQuizFragment"
         android:label="HskFiveQuizFragment" >
         <action
             android:id="@+id/action_hskFiveQuizFragment_to_hskFiveFragment"
@@ -36,7 +24,7 @@
     </fragment>
     <fragment
         android:id="@+id/finishFragment"
-        android:name="com.pavel2309.hskreadingtrainer.ui.FinishFragment"
+        android:name="com.pavel2309.hskfivereadingtrainer.ui.FinishFragment"
         android:label="FinishFragment" >
         <action
             android:id="@+id/action_finishFragment_to_hskFiveFragment"
