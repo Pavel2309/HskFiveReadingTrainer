@@ -42,6 +42,8 @@
     <string name="change">Change</string>
     <string name="save">Save</string>
     <string name="category">Category</string>
-    <string name="next_question">Next Rnadom Question</string>
+    <string name="next_question">Next Random Question</string>
     <string name="hello">Hello</string>
+    <string name="questions_left">Questions Left</string>
+    <string name="there_are">There are</string>
 </resources>
