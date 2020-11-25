@@ -15,6 +15,11 @@
 
     <color name="mainColor">#303F9F</color>
 
-    <color name="correctAnswer">#4CAF50</color>
-    <color name="wrongAnswer">#EC407A</color>
+
+    <color name="correctAnswer">#43A047</color>
+    <color name="wrongAnswer">#D81B60</color>
+
+    <color name="buttonColor">#A5D6A7</color>
+
+    <color name="textColor">#263B55</color>
 </resources>
