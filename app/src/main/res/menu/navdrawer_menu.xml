@@ -4,6 +4,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_contacts"
+
             android:title="@string/contacts" />
         <item
             android:id="@+id/nav_about"
@@ -24,6 +25,15 @@
         <!--            android:id="@+id/nav_hsk6"-->
         <!--            android:icon="@drawable/ic_baseline_class_24"-->
         <!--            android:title="@string/hsk_6" />-->
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/settings"
+            android:title="@string/settings"
+            />
+
     </group>
 
 </menu>
