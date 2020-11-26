@@ -24,7 +24,7 @@
 
             <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/topAppBarQuizHsk5Finish"
-                style="@style/Widget.MaterialComponents.Toolbar.Primary"
+                style="@style/Widget.MaterialComponents.Toolbar.Surface"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
@@ -34,15 +34,44 @@
         </com.google.android.material.appbar.AppBarLayout>
 
         <TextView
-            android:id="@+id/finish_text"
+            android:id="@+id/finish_text_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="@string/you_have_finished_all_questions"
-            android:textSize="@dimen/text_size"
+            android:textColor="#B39DDB"
+            android:textSize="@dimen/text_size_big"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+        <TextView
+            android:id="@+id/finish_text_add_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#B39DDB"
+            android:textSize="50sp"
+            android:text="@string/lihai"
+            app:layout_constraintBottom_toTopOf="@+id/finish_text_id"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="@color/buttonColor"
+            android:text="@string/back"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>

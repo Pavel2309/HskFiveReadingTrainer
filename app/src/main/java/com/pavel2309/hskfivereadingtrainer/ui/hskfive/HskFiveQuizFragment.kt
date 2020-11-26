@@ -50,6 +50,8 @@ class HskFiveQuizFragment : Fragment() {
         }
 
 
+        hskFiveQuizViewModel.startTimer()
+
         hskFiveQuizViewModel.getAllUnsolvedCategoryWithQuestionsAndAnswersHskFive.observe(
             viewLifecycleOwner,
             {
@@ -68,6 +70,8 @@ class HskFiveQuizFragment : Fragment() {
 
         binding.testButton.setOnClickListener {
             questionSolved()
+            hskFiveQuizViewModel.stopTimer()
+            hskFiveQuizViewModel.startTimer()
         }
 
         return binding.root
