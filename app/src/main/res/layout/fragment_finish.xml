@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
 
@@ -50,9 +49,9 @@
             android:id="@+id/finish_text_add_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@string/lihai"
             android:textColor="#B39DDB"
             android:textSize="50sp"
-            android:text="@string/lihai"
             app:layout_constraintBottom_toTopOf="@+id/finish_text_id"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

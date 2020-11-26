@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
+
         <variable
             name="addQuestionViewModel"
             type="com.pavel2309.hskfivereadingtrainer.ui.AddQuestionViewModel" />
@@ -30,13 +30,13 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
+            android:autofillHints="Head Question"
             android:ems="10"
+            android:hint="@string/add_category"
+            android:inputType="text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:autofillHints="Head Question"
-            android:inputType="text"
-            android:hint="@string/add_category"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/enterQuestionText"
@@ -45,13 +45,13 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
+            android:autofillHints="Add question"
             android:ems="10"
+            android:hint="@string/add_question"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/enterCategoryText"
-            android:hint="@string/add_question"
-            android:autofillHints="Add question" />
+            app:layout_constraintTop_toBottomOf="@+id/enterCategoryText" />
 
         <EditText
             android:id="@+id/enterAnswerOneText"
@@ -59,14 +59,14 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="32dp"
+            android:autofillHints="Answer one"
             android:ems="10"
+            android:hint="@string/answer_one"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toStartOf="@+id/isOneCorrectCheckBox"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/enterQuestionText"
-            android:hint="@string/answer_one"
-            android:autofillHints="Answer one" />
+            app:layout_constraintTop_toBottomOf="@+id/enterQuestionText" />
 
         <EditText
             android:id="@+id/enterAnswerTwoText"
@@ -74,14 +74,14 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
+            android:autofillHints="Answer Two"
             android:ems="10"
+            android:hint="@string/answer_two"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toStartOf="@+id/isTwoCorrectCheckBox"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/enterAnswerOneText"
-            android:hint="@string/answer_two"
-            android:autofillHints="Answer Two" />
+            app:layout_constraintTop_toBottomOf="@+id/enterAnswerOneText" />
 
         <EditText
             android:id="@+id/enterAnswerThreeText"
@@ -89,14 +89,14 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
+            android:autofillHints="Answer Three"
             android:ems="10"
+            android:hint="@string/answer_three"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toStartOf="@+id/isThreeCorrectCheckBox"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/enterAnswerTwoText"
-            android:hint="@string/answer_three"
-            android:autofillHints="Answer Three" />
+            app:layout_constraintTop_toBottomOf="@+id/enterAnswerTwoText" />
 
         <EditText
             android:id="@+id/enterAnswerFourText"
@@ -104,14 +104,14 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
+            android:autofillHints="Answer Four"
             android:ems="10"
+            android:hint="@string/answer_four"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toStartOf="@+id/isFourCorrectCheckBox"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/enterAnswerThreeText"
-            android:hint="@string/answer_four"
-            android:autofillHints="Answer Four" />
+            app:layout_constraintTop_toBottomOf="@+id/enterAnswerThreeText" />
 
         <CheckBox
             android:id="@+id/isOneCorrectCheckBox"
@@ -184,13 +184,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="32dp"
+            android:autofillHints="5"
             android:ems="10"
+            android:hint="@string/select_level"
             android:inputType="number"
             app:layout_constraintBottom_toTopOf="@+id/addQuestionButton"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:hint="@string/select_level"
-            android:autofillHints="5" />
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

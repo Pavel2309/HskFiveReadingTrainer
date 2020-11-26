@@ -16,11 +16,11 @@ class HskFiveQuizViewModel(application: Application) : AndroidViewModel(applicat
 
     private val repository: QuizRepository
 
-    //two minutes
     private val millisInFuture: Long = 60_000L
-    //one second for every tick
+
     private val countDownInterval: Long = 1_000L
     var timeLeft = millisInFuture
+
     val editTime = MutableLiveData<String>()
 
     private var isRunning = false
@@ -73,6 +73,7 @@ class HskFiveQuizViewModel(application: Application) : AndroidViewModel(applicat
                 timeLeft = millisUntilFinished
                 _currentTime.value = timeLeft / 1000
             }
+
             override fun onFinish() {
                 timer.cancel()
                 isRunning = false
@@ -84,15 +85,15 @@ class HskFiveQuizViewModel(application: Application) : AndroidViewModel(applicat
 
     fun startTimer() {
 
-        if(!isPaused && editTime.value != null && editTime.value != "") {
+        if (!isPaused && editTime.value != null && editTime.value != "") {
             timeLeft = editTime.value!!.toLong() * 1000 * 60
 
         } else if (!isPaused) {
-            timeLeft =  millisInFuture
+            timeLeft = millisInFuture
         }
 
-        if(!isPaused && !isRunning && editTime.value == "") {
-            timeLeft =  millisInFuture
+        if (!isPaused && !isRunning && editTime.value == "") {
+            timeLeft = millisInFuture
         }
 
         if (!isRunning) {

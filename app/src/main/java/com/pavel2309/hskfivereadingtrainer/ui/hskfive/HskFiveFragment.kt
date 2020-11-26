@@ -94,7 +94,6 @@ class HskFiveFragment : Fragment() {
         }
 
 
-
         hskFiveViewModel.allUnsolevedCategoriesWithQuestionsAndAnswersByLevel.observe(
             viewLifecycleOwner
         ) {
