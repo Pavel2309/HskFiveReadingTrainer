@@ -40,4 +40,9 @@
     <string name="oneTwoThree">123</string>
     <string name="lihai">厉害</string>
     <string name="back">Back</string>
+    <string name="fire">Fire</string>
+    <string name="cancel">Cancel</string>
+    <string name="dialog_fire_missiles">Something</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 </resources>

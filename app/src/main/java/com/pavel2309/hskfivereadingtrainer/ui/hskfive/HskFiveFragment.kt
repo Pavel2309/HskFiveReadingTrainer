@@ -1,21 +1,26 @@
 package com.pavel2309.hskfivereadingtrainer.ui.hskfive
 
+import android.content.Context
+import android.content.DialogInterface
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import com.pavel2309.hskfivereadingtrainer.R
 import com.pavel2309.hskfivereadingtrainer.databinding.FragmentHskFiveBinding
+import com.pavel2309.hskfivereadingtrainer.ui.ResetProgressDialogFragment
 
 class HskFiveFragment : Fragment() {
 
     private lateinit var binding: FragmentHskFiveBinding
     private lateinit var hskFiveViewModel: HskFiveViewModel
+    private lateinit var dialog: ResetProgressDialogFragment
 
     private var isFinished = 0
 
@@ -35,7 +40,8 @@ class HskFiveFragment : Fragment() {
                 view.findNavController()
                     .navigate(R.id.action_hskFiveFragment_to_hskFiveQuizFragment)
             } else {
-                Toast.makeText(activity, "You have finished all questions", Toast.LENGTH_SHORT).show()
+                confirmFireMissiles()
+                //Toast.makeText(activity, "You have finished all questions", Toast.LENGTH_SHORT).show()
             }
         }
 
@@ -116,5 +122,11 @@ class HskFiveFragment : Fragment() {
             }
 
         })
+    }
+
+    fun confirmFireMissiles() {
+        val newFragment = ResetProgressDialogFragment()
+
+        activity?.let { newFragment.show(it.supportFragmentManager, "missiles") }
     }
 }
