@@ -31,8 +31,9 @@ abstract class QuizDatabase : RoomDatabase() {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
                     QuizDatabase::class.java,
-                    "hsk_database.db"
-                ).build()
+                    "hsk_five_database.db"
+                ).createFromAsset("hsk_five_database.db").build()
+                //).build()
                 INSTANCE = instance
                 return instance
             }

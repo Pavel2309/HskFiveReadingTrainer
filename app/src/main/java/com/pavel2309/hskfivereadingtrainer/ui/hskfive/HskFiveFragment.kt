@@ -35,8 +35,7 @@ class HskFiveFragment : Fragment() {
                 view.findNavController()
                     .navigate(R.id.action_hskFiveFragment_to_hskFiveQuizFragment)
             } else {
-                Toast.makeText(activity, "You have finished all questions", Toast.LENGTH_SHORT)
-                    .show()
+                Toast.makeText(activity, "You have finished all questions", Toast.LENGTH_SHORT).show()
             }
         }
 
@@ -62,27 +61,27 @@ class HskFiveFragment : Fragment() {
 
         binding.topAppBar.setOnMenuItemClickListener { menuItem ->
             when (menuItem.itemId) {
-                R.id.topAppBarAddQuestion -> {
-
-                    //findNavController().navigate(R.id.action_hskFiveFragment_to_addQuestionFragment)
-
-                    true
-                }
-                R.id.topAppBarInflate -> {
-
-                    hskFiveViewModel.prepopulateDataFromJson("H50000_reading.json")
-                    hskFiveViewModel.prepopulateDataFromJson("H51001_reading.json")
-                    hskFiveViewModel.prepopulateDataFromJson("H51002_reading.json")
-                    hskFiveViewModel.prepopulateDataFromJson("H51003_reading.json")
-
-                    true
-                }
-                R.id.topAppBarClearAll -> {
-
-                    hskFiveViewModel.deleteAll()
-
-                    true
-                }
+//                R.id.topAppBarAddQuestion -> {
+//
+//                    //findNavController().navigate(R.id.action_hskFiveFragment_to_addQuestionFragment)
+//
+//                    true
+//                }
+//                R.id.topAppBarInflate -> {
+//
+//                    hskFiveViewModel.prepopulateDataFromJson("H50000_reading.json")
+//                    hskFiveViewModel.prepopulateDataFromJson("H51001_reading.json")
+//                    hskFiveViewModel.prepopulateDataFromJson("H51002_reading.json")
+//                    hskFiveViewModel.prepopulateDataFromJson("H51003_reading.json")
+//
+//                    true
+//                }
+//                R.id.topAppBarClearAll -> {
+//
+//                    hskFiveViewModel.deleteAll()
+//
+//                    true
+//                }
                 R.id.topAppBarResetProgress -> {
 
                     resetQuestions()
