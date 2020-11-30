@@ -63,6 +63,22 @@
                 android:backgroundTint="@color/buttonColor"
                 android:text="@string/start"
                 app:cornerRadius="20dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Button
+                android:id="@+id/reset_button"
+                android:layout_width="300dp"
+                android:layout_height="55dp"
+                android:layout_marginBottom="32dp"
+                android:backgroundTint="@color/buttonColor"
+                android:text="@string/reset_progress"
+                android:visibility="gone"
+                app:cornerRadius="20dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -80,6 +96,33 @@
                 android:textSize="@dimen/text_size_big"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
+
+            <TextView
+                android:id="@+id/reset_progress_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset progress"
+                android:textSize="@dimen/text_size"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/start_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.825"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appBarLayout3"
+                app:layout_constraintVertical_bias="0.076" />
+
+            <ImageView
+                android:id="@+id/image_arrow"
+                android:layout_width="54dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="12dp"
+                android:rotation="-46"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/reset_progress_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.913"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/ic_baseline_arrow_right_alt_24" />
 
             <!--            <TextView-->
             <!--                android:id="@+id/greeting_id"-->

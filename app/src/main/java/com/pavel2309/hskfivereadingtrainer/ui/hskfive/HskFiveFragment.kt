@@ -1,26 +1,22 @@
 package com.pavel2309.hskfivereadingtrainer.ui.hskfive
 
-import android.content.Context
-import android.content.DialogInterface
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import com.pavel2309.hskfivereadingtrainer.R
 import com.pavel2309.hskfivereadingtrainer.databinding.FragmentHskFiveBinding
-import com.pavel2309.hskfivereadingtrainer.ui.ResetProgressDialogFragment
 
-class HskFiveFragment : Fragment() {
+
+class HskFiveFragment : Fragment(){
 
     private lateinit var binding: FragmentHskFiveBinding
     private lateinit var hskFiveViewModel: HskFiveViewModel
-    private lateinit var dialog: ResetProgressDialogFragment
 
     private var isFinished = 0
 
@@ -40,10 +36,13 @@ class HskFiveFragment : Fragment() {
                 view.findNavController()
                     .navigate(R.id.action_hskFiveFragment_to_hskFiveQuizFragment)
             } else {
-                confirmFireMissiles()
-                //Toast.makeText(activity, "You have finished all questions", Toast.LENGTH_SHORT).show()
+                Toast.makeText(activity, "You have finished all questions", Toast.LENGTH_SHORT).show()
+                binding.resetProgressText.visibility = View.VISIBLE
+                binding.imageArrow.visibility = View.VISIBLE
             }
         }
+
+
 
         binding.topAppBar.setNavigationOnClickListener {
             binding.drawerLayout.openDrawer(binding.navigationView)
@@ -115,18 +114,17 @@ class HskFiveFragment : Fragment() {
     private fun resetQuestions() {
 
         hskFiveViewModel.allCategoriesWithQuestionsAndAnswersByLevel.observe(viewLifecycleOwner, {
-
             for (i in it) {
                 i.category.isSolved = false
                 binding.hskFiveViewModel?.updateCategory(i.category)
             }
 
         })
+
+        binding.resetProgressText.visibility = View.GONE
+        binding.imageArrow.visibility = View.GONE
     }
 
-    fun confirmFireMissiles() {
-        val newFragment = ResetProgressDialogFragment()
 
-        activity?.let { newFragment.show(it.supportFragmentManager, "missiles") }
-    }
+
 }

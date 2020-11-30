@@ -25,6 +25,10 @@ class FinishFragment : Fragment() {
             findNavController().navigate(R.id.action_finishFragment_to_hskFiveFragment)
         }
 
+        binding.backButton.setOnClickListener {
+            findNavController().navigate(R.id.action_finishFragment_to_hskFiveFragment)
+        }
+
         return binding.root
     }
 
