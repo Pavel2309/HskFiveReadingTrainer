@@ -13,7 +13,7 @@ import com.pavel2309.hskfivereadingtrainer.R
 import com.pavel2309.hskfivereadingtrainer.databinding.FragmentHskFiveBinding
 
 
-class HskFiveFragment : Fragment(){
+class HskFiveFragment : Fragment() {
 
     private lateinit var binding: FragmentHskFiveBinding
     private lateinit var hskFiveViewModel: HskFiveViewModel
