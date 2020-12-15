@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
         <variable
             name="hskFiveViewModel"
             type="com.pavel2309.hskfivereadingtrainer.ui.hskfive.HskFiveViewModel" />
@@ -61,8 +62,8 @@
                 android:layout_marginBottom="32dp"
                 android:backgroundTint="@color/buttonColor"
                 android:text="@string/start"
-                app:cornerRadius="20dp"
                 android:visibility="visible"
+                app:cornerRadius="20dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

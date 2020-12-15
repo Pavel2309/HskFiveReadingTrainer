@@ -9,7 +9,11 @@
         android:label="HskFiveFragment" >
         <action
             android:id="@+id/action_hskFiveFragment_to_hskFiveQuizFragment"
-            app:destination="@id/hskFiveQuizFragment" />
+            app:destination="@id/hskFiveQuizFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
     </fragment>
     <fragment
         android:id="@+id/hskFiveQuizFragment"
@@ -17,10 +21,16 @@
         android:label="HskFiveQuizFragment" >
         <action
             android:id="@+id/action_hskFiveQuizFragment_to_hskFiveFragment"
-            app:destination="@id/hskFiveFragment" />
+            app:destination="@id/hskFiveFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right" />
         <action
             android:id="@+id/action_hskFiveQuizFragment_to_finishFragment"
-            app:destination="@id/finishFragment" />
+            app:destination="@id/finishFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
     </fragment>
     <fragment
         android:id="@+id/finishFragment"
@@ -28,6 +38,8 @@
         android:label="FinishFragment" >
         <action
             android:id="@+id/action_finishFragment_to_hskFiveFragment"
-            app:destination="@id/hskFiveFragment" />
+            app:destination="@id/hskFiveFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right" />
     </fragment>
 </navigation>
