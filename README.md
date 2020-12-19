@@ -7,8 +7,8 @@
 ## Screenshots
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/42889643/100813269-f4f02c80-3479-11eb-9228-8eea4b470acc.png" width="300">
-  <img src="https://user-images.githubusercontent.com/42889643/100813309-089b9300-347a-11eb-9a4a-133fc23176b8.png" width="300">
-  <img src="https://user-images.githubusercontent.com/42889643/100813327-1224fb00-347a-11eb-9b5f-d1df4af7c816.png" width="300">
-  <img src="https://user-images.githubusercontent.com/42889643/100813290-fd486780-3479-11eb-93f8-49cc23aaf8fb.png" width="300">
+  <img src="https://user-images.githubusercontent.com/42889643/102677836-5dac0880-41df-11eb-86b0-a7985df2b10c.png" width="300">
+  <img src="https://user-images.githubusercontent.com/42889643/102677841-67357080-41df-11eb-8d82-eca9f1fc3714.png" width="300">
+  <img src="https://user-images.githubusercontent.com/42889643/102677843-68669d80-41df-11eb-9ea3-d017c2dd2495.png" width="300">
+  <img src="https://user-images.githubusercontent.com/42889643/102677845-6997ca80-41df-11eb-8fef-f7ecf783d5a7.png" width="300">
 </p>
